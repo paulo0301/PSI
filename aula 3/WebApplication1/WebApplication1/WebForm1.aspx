@@ -50,6 +50,7 @@
                     <td>CEP</td>
                     <td>
                         <asp:TextBox ID="TextBoxPostalCode" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="CEP inválido" ControlToValidate="TextBoxPostalCode" ValidationExpression="\d{5}(-\d{3})?"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Favor informar seu CEP" ControlToValidate="TextBoxPostalCode"></asp:RequiredFieldValidator>
@@ -59,6 +60,7 @@
                     <td>Telefone</td>
                     <td>
                         <asp:TextBox ID="TextBoxPhone" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Telefone inválido" ControlToValidate="TextBoxPhone" ValidationExpression="((\(\d{2}\) ?)|(\d{2}-))?\d{4}-\d{4}"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Favor informar seu tefefone" ControlToValidate="TextBoxPhone"></asp:RequiredFieldValidator>
@@ -67,7 +69,7 @@
                 <tr>
                     <td>Senha</td>
                     <td>
-                        <asp:TextBox ID="TextBoxPassword" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Favor informar sua senha" ControlToValidate="TextBoxPassword"></asp:RequiredFieldValidator>
@@ -76,7 +78,8 @@
                 <tr>
                     <td class="auto-style2">Confirmar Senha</td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TextBoxPasswordAgain" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxPasswordAgain" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Senhas diferentes" ControlToValidate="TextBoxPasswordAgain" ControlToCompare="TextBoxPassword" ></asp:CompareValidator>
                     </td>
                     <td class="auto-style2">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Favor confirmar sua senha" ControlToValidate="TextBoxPasswordAgain"></asp:RequiredFieldValidator>
@@ -85,7 +88,8 @@
                 <tr>
                     <td>Idade</td>
                     <td>
-                        <asp:TextBox ID="TextBoxAge" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxAge" runat="server" ></asp:TextBox>
+                        <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Você deve ter até 30 anos para se cadastrar" ControlToValidate="TextBoxAge" ValueToCompare="30" Type="Integer" Operator="LessThanEqual"></asp:CompareValidator>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Favor informar sua idade" ControlToValidate="TextBoxAge"></asp:RequiredFieldValidator>
@@ -93,9 +97,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <input id="Button1" type="button" value="Confirmar" /></td>
+                      <asp:Button ID="Button1" runat="server" Text="Confirmar" />  </td>
+                    
                     <td class="auto-style1">
-                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" Height="58px"/>
                     </td>
                     <td class="auto-style1"></td>
                 </tr>
