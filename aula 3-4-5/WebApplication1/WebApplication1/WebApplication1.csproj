@@ -68,6 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="images\1667300-fausto-silva-polemizou-ao-tirar-a-coroa-950x0-2.jpg" />
+    <Content Include="images\5d8ff9bd9580c.jpeg" />
+    <Content Include="images\analise.jpeg" />
+    <Content Include="images\gabi.jpg" />
+    <Content Include="images\Ronaldinho-Gaúcho.jpg" />
+    <Content Include="UseImageControls.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -76,6 +82,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseImageControls.aspx.cs">
+      <DependentUpon>UseImageControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseImageControls.aspx.designer.cs">
+      <DependentUpon>UseImageControls.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

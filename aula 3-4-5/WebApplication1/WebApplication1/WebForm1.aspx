@@ -6,14 +6,6 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            height: 23px;
-        }
-        .auto-style2 {
-            height: 26px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
