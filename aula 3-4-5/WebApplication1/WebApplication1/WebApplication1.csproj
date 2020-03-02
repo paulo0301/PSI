@@ -71,11 +71,14 @@
     <Content Include="images\1667300-fausto-silva-polemizou-ao-tirar-a-coroa-950x0-2.jpg" />
     <Content Include="images\5d8ff9bd9580c.jpeg" />
     <Content Include="images\analise.jpeg" />
+    <Content Include="images\eeeee.jpg" />
     <Content Include="images\gabi.jpg" />
     <Content Include="images\Ronaldinho-Gaúcho.jpg" />
     <Content Include="UseImageControls.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="UseTreeView.aspx" />
+    <Content Include="UseMultiView.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -95,6 +98,20 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseTreeView.aspx.cs">
+      <DependentUpon>UseTreeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseTreeView.aspx.designer.cs">
+      <DependentUpon>UseTreeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UseMultiView.aspx.cs">
+      <DependentUpon>UseMultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UseMultiView.aspx.designer.cs">
+      <DependentUpon>UseMultiView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
