@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:MultiView ID="MultiView1" runat="server">
+            <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">Cadastro - Dados Pessoais <br /><hr />
                     <table style="width: 100%;">
                         <tr>
@@ -20,8 +20,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style1">Endereço</td>
-                            <td class="auto-style1">
+                            <td >Endereço</td>
+                            <td >
                                 <input id="Text2" type="text" />
                             </td>
                         </tr>
@@ -42,8 +42,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style1">Curso</td>
-                            <td class="auto-style1">
+                            <td >Curso</td>
+                            <td >
                                 <input id="Text5" type="text" />
                             </td>
                         </tr>
@@ -58,17 +58,18 @@
                 <asp:View ID="View3" runat="server">Cadastro - Filiação<br /><hr />
                      <table style="width: 100%;">
                         <tr>
-                            <td class="auto-style1">Nome da mãe</td>
-                            <td class="auto-style1">
+                            <td>Nome da mãe</td>
+                            <td>
                                 <input id="Text7" type="text" />
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style1">Nome do pai</td>
-                            <td class="auto-style1">
+                            <td>Nome do pai</td>
+                            <td>
                                 <input id="Text8" type="text" />
                             </td>
                         </tr>
+                       </table>
                 </asp:View>
             </asp:MultiView>
             <asp:Button ID="ButtonAnterior" runat="server" Text="Anterior" OnClick="ButtonAnterior_Click" />
