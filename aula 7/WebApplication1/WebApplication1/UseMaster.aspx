@@ -2,5 +2,5 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>Minha primeira pgn mestra</p>
+    <p>Minha primeira aplicação com página mestre</p>
 </asp:Content>

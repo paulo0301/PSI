@@ -23,12 +23,13 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
                 <table style="width: 100%;">
                     <tr>
                         <td>
                             <asp:Menu ID="Menu1" runat="server">
                                 <Items>
-                                    <asp:MenuItem NavigateUrl="~/MasterPage.Master" Text="Página Incial" Value="Página Incial"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/UseMaster.aspx" Text="Página Incial" Value="Página Incial"></asp:MenuItem>
                                     <asp:MenuItem NavigateUrl="~/WebFormCapitulos.aspx" Text="Capítulos" Value="Capítulos"></asp:MenuItem>
                                     <asp:MenuItem NavigateUrl="~/WebFormProjetos.aspx" Text="Projetos" Value="Projetos"></asp:MenuItem>
                                 </Items>
@@ -36,12 +37,11 @@
                             </asp:Menu>
                         </td>
                         <td>
-                            <asp:Image ID="Image1" runat="server" imageUrl="~/og_image.png"/>
+                            <asp:Image ID="Image1" Height="80" runat="server" imageUrl="~/og_image.png"/>
                         </td>
                     </tr>
                    
                 </table>
-            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
