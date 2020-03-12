@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\Defaut\StyleSheet1.css" />
-    <Content Include="App_Themes\Tema1\StyleSheet1.css" />
+    <Content Include="App_Themes\SeeingRed\StyleSheet1.css" />
     <Content Include="Global.asax" />
     <Content Include="og_image.png" />
     <Content Include="Web.config" />
@@ -119,7 +119,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Tema1\Skin1.skin" />
+    <Content Include="App_Themes\SeeingRed\SeeingRed.skin" />
     <None Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
