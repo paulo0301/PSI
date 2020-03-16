@@ -7,13 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PortalMemoria
-{
-
-
-    public partial class SiteMaster
-    {
-
+namespace PortalMemoria {
+    
+    
+    public partial class SiteMaster {
+        
         /// <summary>
         /// Controle head.
         /// </summary>
@@ -22,7 +20,7 @@ namespace PortalMemoria
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
+        
         /// <summary>
         /// Controle form1.
         /// </summary>
@@ -31,16 +29,7 @@ namespace PortalMemoria
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Controle Image1.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-
+        
         /// <summary>
         /// Controle Menu1.
         /// </summary>
@@ -49,7 +38,7 @@ namespace PortalMemoria
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Menu Menu1;
-
+        
         /// <summary>
         /// Controle ContentPlaceHolder1.
         /// </summary>
